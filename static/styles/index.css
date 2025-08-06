@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(191, 213, 193);
+    overflow-x: hidden;
+}
+
+.start-menu {
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-bg {
+    background: rgb(40, 83, 58);
+    padding: 15px 15px;
+}
+
+.infoImg {
+    height: 62px;
+    width: 62px;
+}
+
+.phoneInfoImg:hover {
+    content: url(../images/HoverPhoneImg.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailInfoImg:hover {
+    content: url(../images/HoverEmailImg.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.socialNetInfo {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.lightText {
+    color: rgb(227, 234, 195);
+    font-size: 24px;
+}
+
+.logo {
+    position: sticky;
+    top: 200px;
+    z-index: 100;
+    height: auto;
+    max-height: 120px;
+    left: 100px;
+    transform: scale(1.4);
+}
+
+.refButtons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.greenButtonNav {
+    background-color: rgb(40, 83, 58);
+    color: rgb(227, 234, 195);
+    height: 58px;
+    width: 190px;
+    font-size: 36px;
+    border-radius: 90px;
+    border: 4px solid black;
+    font-family: "DM Serif Text", serif;
+}
+
+.greenButtonNav:hover {
+    background-color: rgb(191, 213, 193);
+    color: rgb(40, 83, 58);
+    box-shadow: 10px 14px 25px rgb(0, 0, 0, 25);
+}
+
+.greenButtonLogger {
+    background-color: rgb(40, 83, 58);
+    color: rgb(227, 234, 195);
+    height: 58px;
+    width: 190px;
+    font-size: 36px;
+    border-radius: 90px;
+    border: 4px solid black;
+    font-family: "DM Serif Text", serif;
+}
+
+.greenButtonLogger:hover {
+    background-color: rgb(104, 137, 107);
+    color: black;
+    box-shadow: 15px 15px 25px rgb(0, 0, 0, 25);
+}
+
+.textPanel {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+.textPanel button {
+    margin: 0 auto;
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.smallText {
+    font-size: 24px;
+    width: 550px;
+    text-align: center;
+    transform: translateX(-25%);
+    margin: 0;
+}
+
+.largeText {
+    font-size: 48px;
+    width: 850px;
+    text-align: center;
+    transform: translateX(-35%);
+    margin: 0;
+}
+
+.megaText {
+    font-size: 64px;
+    width: 625px;
+    text-align: center;
+    margin: 0;
+}
+
+.leftVect {
+    position: absolute;
+    left: 0px;
+}
+
+.rightVect {
+    position: absolute;
+    right: 0px;
+}
+
+.DMserifStyle {
+    font-family: "DM Serif Text", serif;
+}
+
+.InclusiveSansStyle {
+    font-family: "Inclusive Sans", serif;
+}
+
+.frogAposFirst {
+    position: relative;
+    right: 525px;
+}
+
+.frogAposSecond {
+    position: relative;
+    right: 50px;
+}
+
+.frogImage {
+    margin-top: 350px;
+    margin-left: 100px;
+    padding-right: 0px;
+}
+
+.imageListblock {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.advantList li::before {
+    content: "-";
+}
+
+.advantList li {
+    font-family: "Inclusive Sans", serif;
+    font-size: 32px;
+    width: 550px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.advantList {
+    margin-left: 75px;
+}
+
+.circleInfo {
+    height: 183px;
+    width: 183px;
+    background-color: rgb(32, 70, 48);
+    border-radius: 360px;
+    border: 5px solid black;
+    font-family: "DM Serif Text", serif;
+}
+
+.circleInfo:hover {
+    background-color: rgb(104, 137, 107);
+}
+
+.circleInfo:hover p {
+    color: black;
+}
+
+.infoTextinCircle {
+    position: relative;
+    top: 50%;
+    left: 65%;
+    font-family: "DM Serif Text", serif;
+    color: rgb(227, 234, 195);
+    font-size: 64px;
+    translate: -50% -50%;
+}
+
+.infocircles {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.infoForCircle {
+    position: relative;
+    width: 300px;
+    top: 140px;
+    left: 65%;
+    font-family: "Inclusive Sans", serif;
+    color: black;
+    font-size: 32px;
+    translate: -50%;
+}
+
+.reviewInfo {
+    margin-top: 200px;
+}
+
+.reviewInfo>p {
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    margin-left: 75px;
+}
+
+.reviewInfo>p::after {
+    content: url(../images/FrogIconB.png);
+    position: relative;
+    left: 200px;
+    top: 70px;
+}
+
+.reviewBlock {
+    width: 470px;
+    height: 316px;
+    border: 4px solid black;
+    background-color: rgb(32, 70, 48);
+    flex: 0 0 auto;
+    padding-left: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 30px;
+}
+
+.reviewBlocks {
+    margin-top: 100px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 80px;
+    overflow-x: auto;
+}
+
+.reviewBlock p {
+    color: rgb(227, 234, 195);
+}
+
+.starWithTextReview p {
+    font-size: 36px;
+    font-family: "DM Serif Text", serif;
+    text-align: start;
+}
+
+.starWithTextReview {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.textBlockReview {
+    margin-top: 20px;
+}
+
+.textBlockReview p {
+    width: 100%;
+}
+
+.mainTextBlockReview {
+    font-size: 36px;
+    font-family: "DM Serif Text", serif;
+}
+
+.secondTextBlockReview {
+    font-size: 16px;
+    font-family: "Inclusive Sans", serif;
+    margin-top: 10px;
+}
+
+.nameTextReview {
+    font-size: 24px;
+    font-family: "DM Serif Text", serif;
+    text-align: start;
+}
+
+.hourTextReview {
+    font-size: 20px;
+    font-family: "Inclusive Sans", serif;
+}
+
+.infoTextReview {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 115px;
+}
+
+.plansBlock>p {
+    font-size: 64px;
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+}
+
+.plansBlock {
+    margin-top: 60px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.plan {
+    height: 627px;
+    width: 470px;
+    background-color: rgb(32, 70, 48);
+    border: 9px solid black;
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-right: 35px;
+}
+
+.circleinPlan {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(227, 234, 195);
+    border-radius: 360px;
+    border: 4px solid black;
+}
+
+.circleinPlan img {
+    translate: -24%;
+}
+
+.flexLineInPlan {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.flexLineInPlan {
+    font-size: 40px;
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    color: rgb(227, 234, 195);
+}
+
+.explainPlanText {
+    font-size: 24px;
+    font-family: "Inclusive Sans", serif;
+    text-align: left;
+    color: rgb(227, 234, 195);
+    margin-top: 20px;
+}
+
+.costPlanText {
+    font-size: 48px;
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    color: rgb(227, 234, 195);
+    margin-top: 20px;
+}
+
+.advantagePlanText {
+    font-size: 32px;
+    font-family: "DM Serif Text", serif;
+    text-align: left;
+    color: rgb(227, 234, 195);
+    margin-top: 50px;
+}
+
+.advantListPlan li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Inclusive Sans", serif;
+    text-align: left;
+    color: rgb(227, 234, 195);
+}
+
+.advantListPlan li::before {
+    content: "-";
+}
+
+.actionButtonPlan {
+    margin-top: 30px;
+    height: 45px;
+    width: 250px;
+    background-color: rgb(191, 213, 193);
+    border-radius: 90px;
+    border: 3px solid black;
+    font-family: "DM Serif Text", serif;
+    font-size: 24px;
+}
+
+.actionButtonPlan:hover {
+    background-color: rgb(40, 83, 58);
+    color: rgb(227, 234, 195);
+    box-shadow: 10px 12px 25px rgb(0, 0, 0, 25);
+}
+
+.centerButtonPlan {
+    display: flex;
+    justify-content: center;
+}
+
+.vectorFourPlacer {
+    position: absolute;
+    right: 0px;
+}
+
+.vec5Placer::before {
+    content: url(../images/Vector\ 5.svg);
+    position: absolute;
+    left: 0px;
+}
+
+.vec4Placer::before {
+    content: url(../images/Vector\ 4.svg);
+    position: absolute;
+    right: 0px;
+}
+
+.opinionBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 1130px;
+    height: 432px;
+    background-color: rgb(32, 70, 48);
+    border: 9px solid black;
+}
+
+.opinionMainText {
+    font-size: 64px;
+    font-family: "DM Serif Text", serif;
+    color: rgb(227, 234, 195);
+}
+
+.opinionAddText {
+    font-size: 32px;
+    font-family: "Inclusive Sans", serif;
+    color: rgb(227, 234, 195);
+}
+
+.actionButtonEnd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 213, 193);
+    color: rgb(40, 83, 58);
+    height: 88px;
+    width: 470px;
+    font-size: 64px;
+    border-radius: 90px;
+    border: 5px solid black;
+    font-family: "DM Serif Text", serif;
+}
+
+.actionButtonEnd:hover {
+    background-color: rgb(32, 70, 48);
+    color: rgb(191, 213, 193);
+    box-shadow: 10px 12px 25px rgb(0, 0, 0, 25);
+}
+
+.endPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 743px;
+    background-color: rgb(5, 51, 22);
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+}
+
+.endPanel img {
+    width: 1011px;
+    height: 569px;
+}
+
+@media only screen and (max-width:1080px) {
+    .rightVect {
+        display: none;
+    }
+
+    .leftVect {
+        display: none
+    }
+}
+
+@media (max-width:600px) {
+    .frogAposFirst {
+        display: none;
+    }
+
+    .frogAposSecond {
+        display: none
+    }
+}
